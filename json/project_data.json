@@ -1,0 +1,94 @@
+[
+    {
+        "identifier": "idn-live-2021",
+        "name": "IDN Live (2021)",
+        "excerpt": "Livestream feature on IDN app where streamer can do a live session and interact with their audiences.",
+        "description": "<p><strong>App Link</strong>: <a href=\"https://apps.apple.com/us/app/idn-app-baca-berita/id1035533846\">You can get IDN app on AppStore here</a>.</p><p>IDN Live is a livestream feature on IDN app. Streamer can create a live room, then engage with their audiences, read their chat messages and receive virtual gifts from them.</p><p>This feature was created with Swift and UIKit. In order to implement livestream capability, at least at the time when I was still employed at IDN Media, my team worked together with UIZA to use their two main libraries, UZBroadcast and UZPlayer. My team is also using Socket.IO to provide statistics such as number of viewers.</p><p>To provide interaction features such as chat and send/receive virtual gift for livestream, my team using IRC chat system and I chose swift-nio-irc-client library by NozelO to achieve IRC implementation inside the app. This will allow user to send and receive both chat message and virtual gift animation data. As for virtual gift itself, I and my team utilize Lottie to render the animation inside a live room. Audience could buy virtual gift with in-app purchase.</p><p>NOTE:<br>- IDN app is also available for Android platform.<br>- Device Mockup created from <a href=\"https://deviceframes.com/templates/iphone-13\">iPhone mockups</a>.</p>",
+        "note": "iOS Software Engineer",
+        "images":
+            [
+                {
+                    "url": "img/idn-live-2021/idn-live-img1.jpg",
+                    "caption": "Livestream interface for audience."
+                },
+                {
+                    "url": "img/idn-live-2021/idn-live-img2.jpg",
+                    "caption": "Audience could top-up Gold, the digital currency to purchase virtual gift."
+                },
+                {
+                    "url": "img/idn-live-2021/idn-live-img3.jpg",
+                    "caption": "Initial version of IDN Live. Internally tested on August 2021."
+                }
+            ],
+        "cover": "img/idn-live-2021/idn-live-cover.jpg"
+    },
+    {
+        "identifier": "idn-baca-berita-2021",
+        "name": "IDN Baca Berita (2021)",
+        "excerpt": "Redesigned news detail page on IDN app. Provides smooth experience for reader on mobile platform.",
+        "description": "<p><strong>App Link</strong>: <a href=\"https://apps.apple.com/us/app/idn-app-baca-berita/id1035533846\">You can get IDN app on AppStore here</a>.</p><p>News is one of main feature on IDN app and also the core of IDN Media. It always available on IDN app to keep reader updated and inspired. In early 2021, the redesigned interface was launched to bring fresh and smooth reading experience on mobile platform.</p><p>This project is also part of IDN Aggregator initiative by engineer team to unify all contents across entire IDN Media's owned platforms such as IDN Times, Popbela, Popmama, Yummy, and duniaku. This initiative was started because previously IDN app only provide contents from IDN Times. Now, reader can also discover more news or article to read on the app.</p><p>My role in this project was to reimplement the news detail page with updated design from product team. All required functions were written with Swift and the interface were built with UIKit. I also used SwiftSoup library by scinfu to parse the content from API and TTTAttributedLabel library to adjust the format of text.</p><p>NOTE:<br>- IDN app is also available for Android platform.<br>- Device Mockup created from <a href=\"https://deviceframes.com/templates/iphone-13\">iPhone mockups</a>.</p>",
+        "note": "iOS Software Engineer",
+        "images":
+            [
+                {
+                    "url": "img/idn-news-2021/idn-news-img1.jpg",
+                    "caption": "Read news or article from various platform owned by IDN Media."
+                },
+                {
+                    "url": "img/idn-news-2021/idn-news-img2.jpg",
+                    "caption": "Reader can discover more news through related tags and other curated news."
+                },
+                {
+                    "url": "img/idn-news-2021/idn-news-img3.jpg",
+                    "caption": "News or article can be shared on many social media platforms."
+                }
+            ],
+        "cover": "img/idn-news-2021/idn-news-cover.jpg"
+    },
+    {
+        "identifier": "idn-tulis-berita-2020",
+        "name": "IDN Tulis Berita (2020)",
+        "excerpt": "Rich text editor on IDN app for contributor or freelance writer.",
+        "description": "<p><strong>App Link</strong>: <a href=\"https://apps.apple.com/us/app/idn-app-baca-berita/id1035533846\">You can get IDN app on AppStore here</a>.</p><p>IDN app allow their reader to be content writer where they can write their own article with in-app article editor. This feature could be a good venue for freelance writer or anyone who loves writing and want to contribute for IDN's content platform. Every submitted articles that passed moderation will be showed on app and idntimes.com without distinction from articles written by IDN's internal editor.</p><p>In this rich text editor, writer could select the category, enter the title, excerpt, opening paragraph, and choose a cover image (or upload their own). Also, because IDN Media adopting listicle style for majority of their news or article, this editor is designed for that style. Writer could add sections in their article. In each section, they can enter the subtitle, paragraph, and choose a media (image, social media post, or Youtube video).</p><p>I developed this editor with Swift and UIKit. Rich text editor for paragraph was implemented using RichEditorView library forked by Andrew-Chen-Wang (originally written by cjwirth). For other components such as media embed and preview article, I reused code from other senior iOS software engineers.</p><p>NOTE:<br>- IDN app is also available for Android platform.<br>- Device Mockup created from <a href=\"https://deviceframes.com/templates/iphone-13\">iPhone mockups</a>.</p>",
+        "note": "iOS Software Engineer",
+        "images":
+            [
+                {
+                    "url": "img/idn-writer-2020/idn-writer-img1.jpg",
+                    "caption": "General interface of IDN's article editor."
+                },
+                {
+                    "url": "img/idn-writer-2020/idn-writer-img2.jpg",
+                    "caption": "Common format and style options such as bold, italic, and underline are available."
+                },
+                {
+                    "url": "img/idn-writer-2020/idn-writer-img3.jpg",
+                    "caption": "Writer could choose a media to embed."
+                }
+            ],
+        "cover": "img/idn-writer-2020/idn-writer-cover.jpg"
+    },
+    {
+        "identifier": "freshthumb-2019",
+        "name": "FreshThumb - Search & Insight (2019)",
+        "excerpt": "Search menu and experimental Insight feature for FreshThumb the ingredient identifier app.",
+        "description": "<p><strong>App Link</strong>: <a href=\"https://apps.apple.com/id/app/freshthumb/id1474582960\">You can get FreshThumb app on AppStore here</a>.</p><p>FreshThumb is an app that have ability to detect fruits, vegetables, and spices based on its visible surfaces. User could use their camera by point it to the ingredients and they will receive useful informations, such as ripeness level, additional tips, and how to keep the ingredient properly. FreshThumb app is designed purely for iOS platform and was written with Swift language.</p><p>Beside ingredient detection as FreshThumb core, this app also have other features to keep user engaged. There is one that currently available for all user and an experimental feature that was never released. These features are my contribution when I was working with FreshThumb team, Search and Insight.</p><p>First, there is Search menu where user could find the information about any ingredients available in FreshThumb's internal library. User could select ingredient to view from search result by keyword or from one of curated lists.</p><p>Second and last, there is Insight menu where user could find contents in form of in-depth article and interactive dialogue (albeit scripted).</p><p>NOTE:<br>- Device Mockup created from <a href=\"https://deviceframes.com/templates/iphone-13\">iPhone mockups</a>.</p>",
+        "note": "iOS Developer",
+        "images":
+            [
+                {
+                    "url": "img/freshthumb-2019/freshthumb-img1.jpg",
+                    "caption": "FreshThumb is available to download on AppStore."
+                },
+                {
+                    "url": "img/freshthumb-2019/freshthumb-img2.jpg",
+                    "caption": "Interactive dialogue and in-depth article, two type of contents in Insight feature (unreleased)."
+                },
+                {
+                    "url": "img/freshthumb-2019/freshthumb-img3.jpg",
+                    "caption": "User could find the ingredient in Search menu."
+                }
+            ],
+        "cover": "img/freshthumb-2019/freshthumb-cover.jpg"
+    }
+]
