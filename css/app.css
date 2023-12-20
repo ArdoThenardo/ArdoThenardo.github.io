@@ -1,33 +1,26 @@
 ﻿@import url('open-iconic/font/css/open-iconic-bootstrap.min.css');
 @import url("bootstrap-icons-1.9.1/bootstrap-icons.css");
+@import url("kanit.css");
+@import url("jakarta_sans.css");
+@import url("basic_loading_bar.css");
 
-@font-face {
-    font-family: "Kanit";
-    src: url("custom-fonts/Kanit/Kanit-Regular.ttf") format("truetype");
-    font-weight: 400;
-}
-
-@font-face {
-    font-family: "Kanit";
-    src: url("custom-fonts/Kanit/Kanit-Medium.ttf") format("truetype");
-    font-weight: 500;
-}
-
-@font-face {
-    font-family: "Kanit";
-    src: url("custom-fonts/Kanit/Kanit-SemiBold.ttf") format("truetype");
-    font-weight: 600;
-}
-
-@font-face {
-    font-family: "Kanit";
-    src: url("custom-fonts/Kanit/Kanit-Bold.ttf") format("truetype");
-    font-weight: 700;
+:root {
+    --atSteelBlue: #4682B4;
+    --atLightBlue: #59A5E3;
+    --atLighterBlue: #62B7FC;
+    --atWhite: #f4f4f2;
+    --atDark: #1e2022;
+    --atMediumGrey: #48535E;
+    --atLightGrey: #7A8691;
+    --animationDelay: 0s;
 }
 
 html, body {
+    font-family: "PlusJakartaSans", Helvetica, Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, .kanit {
     font-family: "Kanit", Helvetica, Arial, sans-serif;
-    background-color: #F6F6F6;
 }
 
 h1:focus {
@@ -38,40 +31,43 @@ a, .btn-link {
     color: #0071c1;
 }
 
-.preload-ui {
-    background-color: #22252c;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.at-btn {
+    background-color: var(--atSteelBlue);
+    color: var(--atWhite);
+    font-size: 16px;
+    font-weight: 500;
+    padding-inline: 18px;
+    border: 0;
+    border-radius: 20px;
+    box-shadow: 0 1px 8px 0 rgba(30, 32, 34, 0.25);
 }
 
-.preload-ui p {
-    font-size: 32px;
-    color: #f6f6f6;
+    .at-btn:hover {
+        background-color: var(--atLightBlue);
+        color: var(--atWhite);
+    }
+
+.reveal-effect {
+    opacity: 0;
+    transition: .25s;
+    animation: reveal-element-animation .5s forwards var(--animationDelay);
 }
 
-.loader-outer {
-    height: 5px;
-    width: 200px;
-    margin-bottom: 0;
-    border-bottom: 1.5px solid #F6F6F6;
+@keyframes reveal-element-animation {
+    from { translate: 0 30px; }
+    to { translate: none; opacity: 1; }
 }
 
-.loader-inner {
-    background-color: #E14658;
-    width: 0px;
-    height: 5px;
-    animation: loader-progress 2s infinite linear;  
-    animation-fill-mode: forwards
+.side-reveal-effect {
+    opacity: 0;
+    transition: .25s;
+    animation: side-reveal-element-animation .5s forwards var(--animationDelay);
 }
 
-@keyframes loader-progress {
-    0%{ width: 0%; }
-    100% { width: 100%; }
-};
+@keyframes side-reveal-element-animation {
+    from { translate: -30px 0; }
+    to { translate: none; opacity: 1; }
+}
 
 .btn-primary {
     color: #fff;

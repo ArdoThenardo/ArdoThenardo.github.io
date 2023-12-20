@@ -1,0 +1,37 @@
+.preload-ui {
+    background-color: var(--atWhite);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+
+.preload-ui span {
+    font-size: 28px;
+    font-weight: 500;
+    color: var(--atMediumGrey);
+    width: 200px;
+}
+
+.loader-outer {
+    height: 12px;
+    width: 200px;
+    margin-bottom: 0;
+    border-bottom: 2px solid var(--atMediumGrey);
+}
+
+.loader-inner {
+    background-color: var(--atSteelBlue);
+    width: 0px;
+    height: 11px;
+    animation: loader-progress 2s infinite linear;  
+    animation-fill-mode: forwards
+}
+
+@keyframes loader-progress {
+    0%{ width: 0%; }
+    100% { width: 100%; }
+};

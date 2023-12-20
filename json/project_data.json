@@ -1,9 +1,58 @@
 [
     {
+        "identifier": "gtroad-2023",
+        "is_main": true,
+        "name": "GT-Road.net (2022 - 2023)",
+        "excerpt": "A fansite where visitor can find information about many iconic race tracks on Gran Turismo video game series.",
+        "description": "<p><strong>Website Link</strong>: <a href=\"https://gt-road.net\" target=\"_blank\" rel=\"noopener noreferrer\">Visit GT-Road here</a>.</p><p><strong>Repository Link</strong>: <a href=\"https://github.com/ArdoThenardo/GTRouteApp\" target=\"_blank\" rel=\"noopener noreferrer\">You can check the source code of this website here</a>.</p><p>GT-Road is a website where visitor, especially racing game fans, can browse and get details about several race tracks that appears in Gran Turismo racing game series. Gran Turismo series featuring many iconic race tracks from fictional circuit such as Trial Mountain and Grand Valley, as well as real-life circuit like Laguna Seca. GT-Road was created as my way to appreciate those well-crafted race tracks.</p><p>GT-Road website was created with ASP.NET Core framework and its interface was built using Blazor. Because of that, I using C# language to write major logic and functions for the website. HTML, CSS, and a little bit of JavaScript (thanks to JS interoperability in Blazor) were also used to construct the view for all pages because Blazor allow me to utilize those languages for building the UI.</p><p>In order to provide race track information for the visitor, GT-Road is fetching data from an API (gtskyline.gt-road.net). That API were written by me, also using ASP.NET Core framework. This “gtskyline” API is using MongoDB library as its database system and all data were stored in MongoDB Atlas cloud service.</p><p>NOTE:<br>- Device Mockup created from <a href=\"https://deviceframes.com/templates/macbook-air\">MacBook Air mockups</a>, <a href=\"https://deviceframes.com/templates/iphone-13\">iPhone mockups</a>, <a href=\"https://deviceframes.com/templates/ipad-mini-6\">iPad Mini mockups</a></p>",
+        "note": "",
+        "images":
+            [
+                {
+                    "url": "img/gtroad-2023/gtroad-img-1.png",
+                    "caption": "The home page of GTRoad, mainly featuring 4 random tracks from 4 categories."
+                },
+                {
+                    "url": "img/gtroad-2023/gtroad-img-2.png",
+                    "caption": "When browsing the list of race tracks, visitor can change the view as well as filter the list based on category and sort option."
+                },
+                {
+                    "url": "img/gtroad-2023/gtroad-img-3.png",
+                    "caption": "In race track detail page, visitor can view the general information, list of track layouts, and media gallery (if available)."
+                },
+                {
+                    "url": "img/gtroad-2023/gtroad-img-4.png",
+                    "caption": "There are several videos (race replay, time trial replay, and other driving action) to watch in GTRoad."
+                }
+            ],
+        "cover": "img/gtroad-2023/gtroad-cover.png"
+    },
+    {
+        "identifier": "nola-travel-2022",
+        "is_main": false,
+        "name": "Nola's Mobile Travel App - Destination Sample (2022)",
+        "excerpt": "Travel destination detail page created with SwiftUI. Based on Nola Riska's portfolio.",
+        "description": "<p><strong>Repository Link</strong>: <a href=\"https://github.com/ArdoThenardo/NolaTravelApp\" target=\"_blank\" rel=\"noopener noreferrer\">Source code of this sample app is available here</a>.</p><p><strong>Design Link</strong>: <a href=\"https://www.behance.net/gallery/144080577/Travel-Mobile-App\" target=\"_blank\" rel=\"noopener noreferrer\">You can check interface design here</a>.</p><p>Travel Mobile App is a mobile application concept made by Nola Riska as one of her many portfolios.  In her original design, this app concept have onboarding, home, and destination detail page. But in this sample app, I only chose the destination detail page to implement. The purpose of this implementation is to learn how to construct user interface for iOS platform with SwiftUI.</p><p>When I was translating Nola's design into iOS app, I took several liberties from her design such as add navigation bar with back button and share button. I also implemented my own take or design for contents inside Review tab and Photo tab.</p><p>Inside Review tab, user could see list of reviews written by other travelers. Each review have traveler's username, review text, rating, and date.</p><p>For Photo tab, I using WaterfallGrid library by Paolo Leonardi to implement waterfall layout for photos.</p><p>NOTE:<br>- Device Mockup created from <a href=\"https://deviceframes.com/templates/iphone-13\" target=\"_blank\" rel=\"noopener noreferrer\">iPhone mockups</a>.</p>",
+        "note": "",
+        "images":
+            [
+                {
+                    "url": "img/nola-travel-2022/nola-travel-img1.jpg",
+                    "caption": "General interface of travel destination detail."
+                },
+                {
+                    "url": "img/nola-travel-2022/nola-travel-img2.jpg",
+                    "caption": "User could see photos of location and read reviews from other travelers."
+                }
+            ],
+        "cover": "img/nola-travel-2022/nola-travel-cover.jpg"
+    },
+    {
         "identifier": "idn-live-2021",
+        "is_main": true,
         "name": "IDN Live (2021)",
         "excerpt": "Livestream feature on IDN app where streamer can do a live session and interact with their audiences.",
-        "description": "<p><strong>App Link</strong>: <a href=\"https://apps.apple.com/us/app/idn-app-baca-berita/id1035533846\">You can get IDN app on AppStore here</a>.</p><p>IDN Live is a livestream feature on IDN app. Streamer can create a live room, then engage with their audiences, read their chat messages and receive virtual gifts from them.</p><p>This feature was created with Swift and UIKit. In order to implement livestream capability, at least at the time when I was still employed at IDN Media, my team worked together with UIZA to use their two main libraries, UZBroadcast and UZPlayer. My team is also using Socket.IO to provide statistics such as number of viewers.</p><p>To provide interaction features such as chat and send/receive virtual gift for livestream, my team using IRC chat system and I chose swift-nio-irc-client library by NozelO to achieve IRC implementation inside the app. This will allow user to send and receive both chat message and virtual gift animation data. As for virtual gift itself, I and my team utilize Lottie to render the animation inside a live room. Audience could buy virtual gift with in-app purchase.</p><p>NOTE:<br>- IDN app is also available for Android platform.<br>- Device Mockup created from <a href=\"https://deviceframes.com/templates/iphone-13\">iPhone mockups</a>.</p>",
+        "description": "<p><strong>App Link</strong>: <a href=\"https://apps.apple.com/us/app/idn-app-baca-berita/id1035533846\" target=\"_blank\" rel=\"noopener noreferrer\">You can get IDN app on AppStore here</a>.</p><p>IDN Live is a livestream feature on IDN app. Streamer can create a live room, then engage with their audiences, read their chat messages and receive virtual gifts from them.</p><p>This feature was created with Swift and UIKit. In order to implement livestream capability, at least at the time when I was still employed at IDN Media, my team worked together with UIZA to use their two main libraries, UZBroadcast and UZPlayer. My team is also using Socket.IO to provide statistics such as number of viewers.</p><p>To provide interaction features such as chat and send/receive virtual gift for livestream, my team using IRC chat system and I chose swift-nio-irc-client library by NozelO to achieve IRC implementation inside the app. This will allow user to send and receive both chat message and virtual gift animation data. As for virtual gift itself, I and my team utilize Lottie to render the animation inside a live room. Audience could buy virtual gift with in-app purchase.</p><p>NOTE:<br>- IDN app is also available for Android platform.<br>- Device Mockup created from <a href=\"https://deviceframes.com/templates/iphone-13\" target=\"_blank\" rel=\"noopener noreferrer\">iPhone mockups</a>.</p>",
         "note": "iOS Software Engineer",
         "images":
             [
@@ -24,9 +73,10 @@
     },
     {
         "identifier": "idn-baca-berita-2021",
+        "is_main": true,
         "name": "IDN Baca Berita (2021)",
         "excerpt": "Redesigned news detail page on IDN app. Provides smooth experience for reader on mobile platform.",
-        "description": "<p><strong>App Link</strong>: <a href=\"https://apps.apple.com/us/app/idn-app-baca-berita/id1035533846\">You can get IDN app on AppStore here</a>.</p><p>News is one of main feature on IDN app and also the core of IDN Media. It always available on IDN app to keep reader updated and inspired. In early 2021, the redesigned interface was launched to bring fresh and smooth reading experience on mobile platform.</p><p>This project is also part of IDN Aggregator initiative by engineer team to unify all contents across entire IDN Media's owned platforms such as IDN Times, Popbela, Popmama, Yummy, and duniaku. This initiative was started because previously IDN app only provide contents from IDN Times. Now, reader can also discover more news or article to read on the app.</p><p>My role in this project was to reimplement the news detail page with updated design from product team. All required functions were written with Swift and the interface were built with UIKit. I also used SwiftSoup library by scinfu to parse the content from API and TTTAttributedLabel library to adjust the format of text.</p><p>NOTE:<br>- IDN app is also available for Android platform.<br>- Device Mockup created from <a href=\"https://deviceframes.com/templates/iphone-13\">iPhone mockups</a>.</p>",
+        "description": "<p><strong>App Link</strong>: <a href=\"https://apps.apple.com/us/app/idn-app-baca-berita/id1035533846\" target=\"_blank\" rel=\"noopener noreferrer\">You can get IDN app on AppStore here</a>.</p><p>News is one of main feature on IDN app and also the core of IDN Media. It always available on IDN app to keep reader updated and inspired. In early 2021, the redesigned interface was launched to bring fresh and smooth reading experience on mobile platform.</p><p>This project is also part of IDN Aggregator initiative by engineer team to unify all contents across entire IDN Media's owned platforms such as IDN Times, Popbela, Popmama, Yummy, and duniaku. This initiative was started because previously IDN app only provide contents from IDN Times. Now, reader can also discover more news or article to read on the app.</p><p>My role in this project was to reimplement the news detail page with updated design from product team. All required functions were written with Swift and the interface were built with UIKit. I also used SwiftSoup library by scinfu to parse the content from API and TTTAttributedLabel library to adjust the format of text.</p><p>NOTE:<br>- IDN app is also available for Android platform.<br>- Device Mockup created from <a href=\"https://deviceframes.com/templates/iphone-13\" target=\"_blank\" rel=\"noopener noreferrer\">iPhone mockups</a>.</p>",
         "note": "iOS Software Engineer",
         "images":
             [
@@ -47,9 +97,10 @@
     },
     {
         "identifier": "idn-tulis-berita-2020",
+        "is_main": true,
         "name": "IDN Tulis Berita (2020)",
         "excerpt": "Rich text editor on IDN app for contributor or freelance writer.",
-        "description": "<p><strong>App Link</strong>: <a href=\"https://apps.apple.com/us/app/idn-app-baca-berita/id1035533846\">You can get IDN app on AppStore here</a>.</p><p>IDN app allow their reader to be content writer where they can write their own article with in-app article editor. This feature could be a good venue for freelance writer or anyone who loves writing and want to contribute for IDN's content platform. Every submitted articles that passed moderation will be showed on app and idntimes.com without distinction from articles written by IDN's internal editor.</p><p>In this rich text editor, writer could select the category, enter the title, excerpt, opening paragraph, and choose a cover image (or upload their own). Also, because IDN Media adopting listicle style for majority of their news or article, this editor is designed for that style. Writer could add sections in their article. In each section, they can enter the subtitle, paragraph, and choose a media (image, social media post, or Youtube video).</p><p>I developed this editor with Swift and UIKit. Rich text editor for paragraph was implemented using RichEditorView library forked by Andrew-Chen-Wang (originally written by cjwirth). For other components such as media embed and preview article, I reused code from other senior iOS software engineers.</p><p>NOTE:<br>- IDN app is also available for Android platform.<br>- Device Mockup created from <a href=\"https://deviceframes.com/templates/iphone-13\">iPhone mockups</a>.</p>",
+        "description": "<p><strong>App Link</strong>: <a href=\"https://apps.apple.com/us/app/idn-app-baca-berita/id1035533846\" target=\"_blank\" rel=\"noopener noreferrer\">You can get IDN app on AppStore here</a>.</p><p>IDN app allow their reader to be content writer where they can write their own article with in-app article editor. This feature could be a good venue for freelance writer or anyone who loves writing and want to contribute for IDN's content platform. Every submitted articles that passed moderation will be showed on app and idntimes.com without distinction from articles written by IDN's internal editor.</p><p>In this rich text editor, writer could select the category, enter the title, excerpt, opening paragraph, and choose a cover image (or upload their own). Also, because IDN Media adopting listicle style for majority of their news or article, this editor is designed for that style. Writer could add sections in their article. In each section, they can enter the subtitle, paragraph, and choose a media (image, social media post, or Youtube video).</p><p>I developed this editor with Swift and UIKit. Rich text editor for paragraph was implemented using RichEditorView library forked by Andrew-Chen-Wang (originally written by cjwirth). For other components such as media embed and preview article, I reused code from other senior iOS software engineers.</p><p>NOTE:<br>- IDN app is also available for Android platform.<br>- Device Mockup created from <a href=\"https://deviceframes.com/templates/iphone-13\" target=\"_blank\" rel=\"noopener noreferrer\">iPhone mockups</a>.</p>",
         "note": "iOS Software Engineer",
         "images":
             [
@@ -70,9 +121,10 @@
     },
     {
         "identifier": "freshthumb-2019",
+        "is_main": true,
         "name": "FreshThumb - Search & Insight (2019)",
         "excerpt": "Search menu and experimental Insight feature for FreshThumb the ingredient identifier app.",
-        "description": "<p><strong>App Link</strong>: <a href=\"https://apps.apple.com/id/app/freshthumb/id1474582960\">You can get FreshThumb app on AppStore here</a>.</p><p>FreshThumb is an app that have ability to detect fruits, vegetables, and spices based on its visible surfaces. User could use their camera by point it to the ingredients and they will receive useful informations, such as ripeness level, additional tips, and how to keep the ingredient properly. FreshThumb app is designed purely for iOS platform and was written with Swift language.</p><p>Beside ingredient detection as FreshThumb core, this app also have other features to keep user engaged. There is one that currently available for all user and an experimental feature that was never released. These features are my contribution when I was working with FreshThumb team, Search and Insight.</p><p>First, there is Search menu where user could find the information about any ingredients available in FreshThumb's internal library. User could select ingredient to view from search result by keyword or from one of curated lists.</p><p>Second and last, there is Insight menu where user could find contents in form of in-depth article and interactive dialogue (albeit scripted).</p><p>NOTE:<br>- Device Mockup created from <a href=\"https://deviceframes.com/templates/iphone-13\">iPhone mockups</a>.</p>",
+        "description": "<p><strong>App Link</strong>: <a href=\"https://apps.apple.com/id/app/freshthumb/id1474582960\" target=\"_blank\" rel=\"noopener noreferrer\">You can get FreshThumb app on AppStore here</a>.</p><p>FreshThumb is an app that have ability to detect fruits, vegetables, and spices based on its visible surfaces. User could use their camera by point it to the ingredients and they will receive useful informations, such as ripeness level, additional tips, and how to keep the ingredient properly. FreshThumb app is designed purely for iOS platform and was written with Swift language.</p><p>Beside ingredient detection as FreshThumb core, this app also have other features to keep user engaged. There is one that currently available for all user and an experimental feature that was never released. These features are my contribution when I was working with FreshThumb team, Search and Insight.</p><p>First, there is Search menu where user could find the information about any ingredients available in FreshThumb's internal library. User could select ingredient to view from search result by keyword or from one of curated lists.</p><p>Second and last, there is Insight menu where user could find contents in form of in-depth article and interactive dialogue (albeit scripted).</p><p>NOTE:<br>- Device Mockup created from <a href=\"https://deviceframes.com/templates/iphone-13\" target=\"_blank\" rel=\"noopener noreferrer\">iPhone mockups</a>.</p>",
         "note": "iOS Developer",
         "images":
             [
