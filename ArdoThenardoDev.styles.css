@@ -181,7 +181,6 @@ p[b-tjgow70iev] {
 
 .home-professional-item[b-tjgow70iev] {
     background-color: var(--atWhite);
-    background-blend-mode: overlay;
     background-size: cover;
     background-position: bottom;
     display: flex;
@@ -200,11 +199,11 @@ p[b-tjgow70iev] {
     }
 
     .home-professional-item:first-of-type[b-tjgow70iev] {
-        background-image: url('../img/general/fauxels-teamwork.jpg');
+        background-image: url('../img/general/fauxels-teamwork-white-edit.jpg');
     }
 
     .home-professional-item:nth-of-type(2)[b-tjgow70iev] {
-        background-image: url('../img/general/blurier-code.png');
+        background-image: url('../img/general/blurier-code-white-edit.jpg');
     }
 
     .home-professional-item:last-of-type[b-tjgow70iev] {
@@ -701,6 +700,7 @@ span[b-edlk0fd1jg] {
     padding-inline: 24px;
     padding-block: 14px;
     backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
     z-index: 1;
 }
 
@@ -770,6 +770,7 @@ main[b-q41g9xaw37] {
     padding-block: 12px;
     justify-content: space-between;
     backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
     z-index: 2;
 }
 
